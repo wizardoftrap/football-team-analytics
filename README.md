@@ -30,36 +30,6 @@ The notebook performs the following analyses:
 4. **League Analysis**:
    - Determines dominant playing styles by league (e.g., Bundesliga: Cautious Pass and Move, Premier League: Aggressive Long Ball).
 
-## Requirements
-To run this notebook, you need the following Python libraries:
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-
-These can be installed via pip:
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-
-## Usage
-1. **Download the Dataset**:
-   - Obtain the `players_data-2024_2025.csv` file from the Kaggle dataset link above and place it in the same directory as the notebook.
-
-2. **Run the Notebook**:
-   - Open the notebook in a Jupyter environment (e.g., Kaggle, JupyterLab, or VS Code).
-   - Execute the cells sequentially to load data, preprocess, and perform analyses.
-
-3. **Key Functions**:
-   - `find_similar_players(player_name, top_n=10)`: Returns the top N players most similar to the specified player based on selected performance metrics.
-   - `create_team_df(df)`: Aggregates player data into team-level statistics with additional derived metrics.
-
-4. **Customization**:
-   - Modify the `features` list in the similarity analysis to include different metrics.
-   - Adjust the `top_n` parameter in `find_similar_players` to change the number of similar players returned.
-   - Update the `columns` list or aggregation logic in the team analysis to focus on specific metrics.
-
 ## Example Outputs
 - **Player Similarity**:
   - For Lamine Yamal, the notebook identifies players like Iñaki Williams and Son Heung-min as similar based on metrics like goals, assists, and progressive carries.
